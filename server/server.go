@@ -70,7 +70,7 @@ type PingResponse struct {
 }
 
 // ping handles the /ping endpoint and returns a JSON response
-func ping(w http.ResponseWriter, r *http.Request) error {
+func ping(w http.ResponseWriter, _ *http.Request) error {
 	response := PingResponse{
 		Id:  0,
 		Msg: "Pong",
